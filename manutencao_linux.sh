@@ -37,7 +37,8 @@ echo "==========================================================
 		31 - Netbeans 8.2 IDE - Para Desenvolvimento
 		32 - OpenSSH Server - Conexão SSH (lado Server)
 		33 - OpenSSH Client - Conexão SSH (lado Client)
-    34 - Atom Editor - Para Desenvolvimento
+    34 - Astah Professional
+    35 - Atom Editor - Para Desenvolvimento
 		00 - Saida com Reinicialização
 		0  - Saida do Script
 
@@ -534,10 +535,10 @@ case $opcao in
 		sudo echo "Icon=/opt/astah_professional/astah-5.png">>Astah
 		sudo chmod 555 /Astah.desktop;;
 
-  34) # Atom - Editor
+  35) # Atom - Editor
     sudo add-apt-repository ppa:webupd8team/atom
     sudo apt-get update
-    sudo apt-get install atom
+    sudo apt-get install atom;;
 
 
 	00) # Saída com Reinicialização
