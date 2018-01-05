@@ -37,8 +37,10 @@ echo "==========================================================
 		31 - Netbeans 8.2 IDE - Para Desenvolvimento
 		32 - OpenSSH Server - Conexão SSH (lado Server)
 		33 - OpenSSH Client - Conexão SSH (lado Client)
-    34 - Astah Professional
-    35 - Atom Editor - Para Desenvolvimento
+    		34 - Astah Professional
+    		35 - Atom Editor - Para Desenvolvimento
+		36 - PHPStorm
+		37 - VSCode
 		00 - Saida com Reinicialização
 		0  - Saida do Script
 
@@ -352,7 +354,7 @@ case $opcao in
 		sudo apt-get autoclean -y
 		sudo apt-get autoremove -y;;
 
-	5)  # Gnome Tweak Tool - Personalizações, botões de janelas, temas e atalhos configuráveis).
+	5)  	# Gnome Tweak Tool - Personalizações, botões de janelas, temas e atalhos configuráveis).
 		sudo apt-get update -y
 		sudo apt-get install gnome-tweak-tool -y;;
 
@@ -393,15 +395,15 @@ case $opcao in
 		sudo apt-get update -y
 		sudo apt-get install default-jdk -y;;
 
-	13) # Flash Plugin - Para Usuários
+	13)	# Flash Plugin - Para Usuários
 		sudo apt-get update -y;
 		sudo apt-get install flashplugin-installer -y;;
 
-	14) # Wine - Para execução de softwares Windows
+	14) 	# Wine - Para execução de softwares Windows
 		sudo apt-get upgrade
 		sudo apt-get install wine -y;;
 
-	15) # Inkscape - Edição de imagens
+	15) 	# Inkscape - Edição de imagens
 		sudo add-apt-repository ppa:inkscape.dev/stable -y
 		sudo apt-get update
 		sudo apt-get install inkscape -y;;
@@ -439,28 +441,28 @@ case $opcao in
 		sudo apt-get update -y
 		sudo apt-get install kazam -y;;
 
-	21) # IntelliJ - Para Desenvolvimento
+	21) 	# IntelliJ - Para Desenvolvimento
 		sudo apt-get update -y
 		sudo apt-get instal openjdk-8jdk -y
 		sudo add-apt-repository ppa:mmk2410/intellij-idea-community -y
 		sudo apt-get update -y
 		sudo apt-get install intellij-idea-community -y;;
 
-	22) # Eclipse - Para Desenvolvimento
+	22) 	# Eclipse - Para Desenvolvimento
 		sudo apt-get update
 		sudo apt-get install eclipse -y;;
 
-	23) # VM Ware - Máquinas virtuais - 5A02H-AU243-TZJ49-GTC7K-3C61N
+	23) 	# VM Ware - Máquinas virtuais - 5A02H-AU243-TZJ49-GTC7K-3C61N
 		wget http://www.vmware.com/go/tryworkstation-linux-64
 		sudo chmod 777 * -R
 		sudo ./tryworkstation-linux-64;;
 
-	24) # Atom IDE - Para Desenvolvimento
+	24)	# Atom IDE - Para Desenvolvimento
 		sudo add-apt-repository ppa:webupd8team/atom -y
 		sudo apt-get update
 		sudo apt-get install atom -y;;
 
-	25) # PHP 7
+	25) 	# PHP 7
 		sudo apt-get install python-software-properties -y
 		sudo add-apt-repository ppa:ondrej/php -y
 		sudo apt-get update -y
@@ -469,7 +471,7 @@ case $opcao in
 		sudo apt-get install php7.0-mysql -y
 		sudo apt-get --purge autoremove -y;;
 
-	26) # Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
+	26) 	# Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
 		sudo apt-get update;
 		sudo apt-get install postgresql -y
 		sudo apt-get install pgadmin3 -y;;
@@ -502,15 +504,15 @@ case $opcao in
 		sudo chmod +x netbeans-linux.sh
 		sudo ./netbeans-linux.sh -y;;
 
-	32) #Open SSH-Server
+	32) 	#Open SSH-Server
 		sudo apt-get update
 		sudo apt-get install openssh-server -y;;
 
-	33) #Open SSH-Client
+	33) 	#Open SSH-Client
 		sudo apt-get update
 		sudo apt-get install openssh-client;;
 
-	34) #Astah Professional
+	34) 	#Astah Professional
 		cd /tmp/
 		wget http://cdn.astah.net/downloads/astah-professional-7_1_0-f2c212.zip
 		sudo chmod 777 * -R
@@ -535,17 +537,23 @@ case $opcao in
 		sudo echo "Icon=/opt/astah_professional/astah-5.png">>Astah
 		sudo chmod 555 /Astah.desktop;;
 
-  35) # Atom - Editor
-    sudo add-apt-repository ppa:webupd8team/atom
-    sudo apt-get update
-    sudo apt-get install atom;;
+  	35)	# Atom - Editor
+    		sudo add-apt-repository ppa:webupd8team/atom
+    		sudo apt-get update
+    		sudo apt-get install atom;;
+	
+	36) 	#PHPStorm
+		echo "Não possui instalação";;
+	
+	37)	#VS Code
+		echo "Não possui instalação";;
 
 
-	00) # Saída com Reinicialização
+	00) 	# Saída com Reinicialização
 		echo "Saindo e reiniciando... "
 		sudo reboot now;;
 
-	0) # Saída do Script
+	0) 	# Saída do Script
 		echo "Saindo... "
 		exit;;
 
