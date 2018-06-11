@@ -181,6 +181,7 @@ case $opcao in
 		sudo apt-get install php7.0 php7.0-fpm -y
 		sudo apt-get install libapache2-mod-php7.0 -y
 		sudo apt-get install php7.0-mysql -y
+		sudo apt-get install php-zip
 		sudo apt-get install php-xml
 		sudo apt-get install php-mbstring
 		sudo apt-get --purge autoremove -y;;
@@ -278,11 +279,13 @@ case $opcao in
 		gem install rails;;
 	
 	39) #Laravel
-		composer global require "laravel/installer"
+		sudo apt-get install php-zip
 		sudo apt-get install php-xml
 		sudo apt-get install php-mbstring
+		composer global require "laravel/installer"
 		echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
-		source ~/.bashrc;;
+		source ~/.bashrc
+		alias laravel='~/.composer/vendor/bin/laravel';;
 
 	00) # Saída com Reinicialização
 		echo "Saindo e reiniciando... "
