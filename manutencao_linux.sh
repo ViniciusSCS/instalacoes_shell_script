@@ -37,8 +37,8 @@ echo "==========================================================
 		31 - Netbeans 8.2 IDE - Para Desenvolvimento
 		32 - OpenSSH Server - Conexão SSH (lado Server)
 		33 - OpenSSH Client - Conexão SSH (lado Client)
-    		34 - Astah Professional
-    		35 - Atom Editor - Para Desenvolvimento
+    	34 - Astah Professional
+    	35 - Atom Editor - Para Desenvolvimento
 		36 - PHPStorm
 		37 - VSCode
 		00 - Saida com Reinicialização
