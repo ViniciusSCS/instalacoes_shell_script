@@ -41,6 +41,7 @@ echo "==========================================================
     	35 - Atom Editor - Para Desenvolvimento
 		36 - PHPStorm
 		37 - VSCode
+		38 - Frameworks
 		00 - Saida com Reinicialização
 		0  - Saida do Script
 
@@ -331,6 +332,8 @@ case $opcao in
 		sudo apt-get install php7.0 php7.0-fpm -y
 		sudo apt-get install libapache2-mod-php7.0 -y
 		sudo apt-get install php7.0-mysql -y
+		sudo apt-get install php-xml
+		sudo apt-get install php-mbstring
 		sudo apt-get --purge autoremove -y
 		#26 - Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
 		sudo apt-get update;
@@ -354,7 +357,7 @@ case $opcao in
 		sudo apt-get autoclean -y
 		sudo apt-get autoremove -y;;
 
-	5)  	# Gnome Tweak Tool - Personalizações, botões de janelas, temas e atalhos configuráveis).
+	5)  # Gnome Tweak Tool - Personalizações, botões de janelas, temas e atalhos configuráveis).
 		sudo apt-get update -y
 		sudo apt-get install gnome-tweak-tool -y;;
 
@@ -399,11 +402,11 @@ case $opcao in
 		sudo apt-get update -y;
 		sudo apt-get install flashplugin-installer -y;;
 
-	14) 	# Wine - Para execução de softwares Windows
+	14) # Wine - Para execução de softwares Windows
 		sudo apt-get upgrade
 		sudo apt-get install wine -y;;
 
-	15) 	# Inkscape - Edição de imagens
+	15) # Inkscape - Edição de imagens
 		sudo add-apt-repository ppa:inkscape.dev/stable -y
 		sudo apt-get update
 		sudo apt-get install inkscape -y;;
@@ -441,18 +444,18 @@ case $opcao in
 		sudo apt-get update -y
 		sudo apt-get install kazam -y;;
 
-	21) 	# IntelliJ - Para Desenvolvimento
+	21) # IntelliJ - Para Desenvolvimento
 		sudo apt-get update -y
 		sudo apt-get instal openjdk-8jdk -y
 		sudo add-apt-repository ppa:mmk2410/intellij-idea-community -y
 		sudo apt-get update -y
 		sudo apt-get install intellij-idea-community -y;;
 
-	22) 	# Eclipse - Para Desenvolvimento
+	22) # Eclipse - Para Desenvolvimento
 		sudo apt-get update
 		sudo apt-get install eclipse -y;;
 
-	23) 	# VM Ware - Máquinas virtuais - 5A02H-AU243-TZJ49-GTC7K-3C61N
+	23) # VM Ware - Máquinas virtuais - 5A02H-AU243-TZJ49-GTC7K-3C61N
 		wget http://www.vmware.com/go/tryworkstation-linux-64
 		sudo chmod 777 * -R
 		sudo ./tryworkstation-linux-64;;
@@ -462,13 +465,15 @@ case $opcao in
 		sudo apt-get update
 		sudo apt-get install atom -y;;
 
-	25) 	# PHP 7
+	25) # PHP 7
 		sudo apt-get install python-software-properties -y
 		sudo add-apt-repository ppa:ondrej/php -y
 		sudo apt-get update -y
 		sudo apt-get install php7.0 php7.0-fpm -y
 		sudo apt-get install libapache2-mod-php7.0 -y
 		sudo apt-get install php7.0-mysql -y
+		sudo apt-get install php-xml
+		sudo apt-get install php-mbstring
 		sudo apt-get --purge autoremove -y;;
 
 	26) 	# Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
@@ -504,15 +509,15 @@ case $opcao in
 		sudo chmod +x netbeans-linux.sh
 		sudo ./netbeans-linux.sh -y;;
 
-	32) 	#Open SSH-Server
+	32) #Open SSH-Server
 		sudo apt-get update
 		sudo apt-get install openssh-server -y;;
 
-	33) 	#Open SSH-Client
+	33) #Open SSH-Client
 		sudo apt-get update
 		sudo apt-get install openssh-client;;
 
-	34) 	#Astah Professional
+	34) #Astah Professional
 		cd /tmp/
 		wget http://cdn.astah.net/downloads/astah-professional-7_1_0-f2c212.zip
 		sudo chmod 777 * -R
@@ -542,14 +547,25 @@ case $opcao in
     		sudo apt-get update
     		sudo apt-get install atom;;
 	
-	36) 	#PHPStorm
+	36) #PHPStorm
 		echo "Não possui instalação";;
 	
 	37)	#VS Code
 		echo "Não possui instalação";;
+	
+	38) #Frameworks
+		curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+		composer global require "laravel/installer"
+		sudo apt-get install nodejs
+		sudo npm install -g @angular/cli
+		sudo apt-get install npm
+		sudo npm install nvm
+	    sudo apt-get install ruby-full
+		gem install rails;;
+		
 
 
-	00) 	# Saída com Reinicialização
+	00) # Saída com Reinicialização
 		echo "Saindo e reiniciando... "
 		sudo reboot now;;
 
