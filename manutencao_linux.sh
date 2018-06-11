@@ -279,9 +279,9 @@ case $opcao in
 		gem install rails;;
 	
 	39) #Laravel
-		sudo apt-get install php-zip
+		sudo apt-get install php7.0-zip
 		sudo apt-get install php-xml
-		sudo apt-get install php-mbstring
+		sudo apt-get install php7.0-mbstring
 		composer global require "laravel/installer"
 		echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
 		source ~/.bashrc
