@@ -3,48 +3,48 @@
 clear
 while true; do
 echo "==========================================================
-       	Digite o número do componente/programa a ser instalado:
-		1  - Atualização Update & Update & Autoclean & Autoremove
-		2  - Gnome Tweak Tool - Personalizações, botões de janelas, temas e atalhos configuráveis).
-		3  - VLC player - Reprodutor de vídeos
-		4  - Codecs Ubuntu Restricted Extras - Reconhecimento e reprodução de áudio e vídeo
-		5  - Google Chrome - Browser
-		6  - Skype - Mensageiro e Videochamadas
-		7 - GIMP - Editor de Imagens
-		8 - qBittorrent - Gerenciador de Torrent
-		9 - Java JRE - Java para Usuários
-		10 - Flash Plugin - Para Usuários
-		11 - Wine - Para execução de softwares Windows
-		12 - Inkscape - Edição de imagens
-		13 - Filezilla - Cliente FTP
-		14 - MySQL - Sistema Gerenciador de Banco de Dados
-		15 - Notepadqq - Bloco de notas similar ao Notepad++
-		16 - Java JDK 8 - Java para Desenvolvimento
-		17 - Kazan - Gravação de vídeos
-		18 - IntelliJ - Para Desenvolvimento
-		19 - Eclipse - Para Desenvolvimento
-		20 - VM Ware - Máquinas virtuais - 5A02H-AU243-TZJ49-GTC7K-3C61N
-		21 - Atom IDE - Para Desenvolvimento
-		22 - PHP 7 e Apache
-		23 - Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
-		24 - Git - Versionamento
-		25 - CodeBlocks - Editor de códigos
-		26 - Virtual-Box - Máquinas virtuais
-		27 - MariaDB - Sistema Gerenciador de Banco de Dados
-		28 - Netbeans 8.2 IDE - Para Desenvolvimento
-		29 - OpenSSH Server - Conexão SSH (lado Server)
-		30 - OpenSSH Client - Conexão SSH (lado Client)
+   Digite o número do componente/programa a ser instalado:
+	1  - Atualização Update & Update & Autoclean & Autoremove
+	2  - Gnome Tweak Tool - Personalizações, botões de janelas, temas e atalhos configuráveis).
+	3  - VLC player - Reprodutor de vídeos
+	4  - Codecs Ubuntu Restricted Extras - Reconhecimento e reprodução de áudio e vídeo
+	5  - Google Chrome - Browser
+	6  - Skype - Mensageiro e Videochamadas
+	7 - GIMP - Editor de Imagens
+	8 - qBittorrent - Gerenciador de Torrent
+	9 - Java JRE - Java para Usuários
+	10 - Flash Plugin - Para Usuários
+	11 - Wine - Para execução de softwares Windows
+	12 - Inkscape - Edição de imagens
+	13 - Filezilla - Cliente FTP
+	14 - MySQL - Sistema Gerenciador de Banco de Dados
+	15 - Notepadqq - Bloco de notas similar ao Notepad++
+	16 - Java JDK 8 - Java para Desenvolvimento
+	17 - Kazan - Gravação de vídeos
+	18 - IntelliJ - Para Desenvolvimento
+	19 - Eclipse - Para Desenvolvimento
+	20 - VM Ware - Máquinas virtuais - 5A02H-AU243-TZJ49-GTC7K-3C61N
+	21 - Atom IDE - Para Desenvolvimento
+	22 - PHP 7 e Apache
+	23 - Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
+	24 - Git - Versionamento
+	25 - CodeBlocks - Editor de códigos
+	26 - Virtual-Box - Máquinas virtuais
+	27 - MariaDB - Sistema Gerenciador de Banco de Dados
+	28 - Netbeans 8.2 IDE - Para Desenvolvimento
+	29 - OpenSSH Server - Conexão SSH (lado Server)
+	30 - OpenSSH Client - Conexão SSH (lado Client)
     	31 - Astah Professional
     	32 - Atom Editor - Para Desenvolvimento
-		33 - PHPStorm
-		34 - VSCode
-		35 - Node
-		36 - Composer
-		37 - Angular
-		38 - Ruby e Ruby on Rails
-		39 - Laravel
-		00 - Saida com Reinicialização
-		0  - Saida do Script
+	33 - PHPStorm
+	34 - VSCode
+	35 - Node
+	36 - Composer
+	37 - Angular
+	38 - Ruby e Ruby on Rails
+	39 - Laravel
+	00 - Saida com Reinicialização
+	0  - Saida do Script
 
 ==========================================================="
 echo -n "-> OPÇÃO:  "
