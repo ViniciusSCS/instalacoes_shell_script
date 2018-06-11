@@ -252,9 +252,9 @@ case $opcao in
 		sudo chmod 555 /Astah.desktop;;
 
   	32)	# Atom - Editor
-    		sudo add-apt-repository ppa:webupd8team/atom
-    		sudo apt-get update
-    		sudo apt-get install atom;;
+		sudo add-apt-repository ppa:webupd8team/atom
+		sudo apt-get update
+		sudo apt-get install atom;;
 	
 	33) #PHPStorm
 		echo "Não possui instalação";;
@@ -280,7 +280,6 @@ case $opcao in
 		composer global require "laravel/installer"
 		sudo apt-get install php-xml
 		sudo apt-get install php-mbstring;;
-
 
 	00) # Saída com Reinicialização
 		echo "Saindo e reiniciando... "
