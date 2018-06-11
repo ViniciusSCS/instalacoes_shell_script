@@ -25,7 +25,7 @@ echo "==========================================================
 		19 - Eclipse - Para Desenvolvimento
 		20 - VM Ware - Máquinas virtuais - 5A02H-AU243-TZJ49-GTC7K-3C61N
 		21 - Atom IDE - Para Desenvolvimento
-		22 - PHP 7
+		22 - PHP 7 e Apache
 		23 - Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
 		24 - Git - Versionamento
 		25 - CodeBlocks - Editor de códigos
@@ -174,7 +174,7 @@ case $opcao in
 		sudo apt-get update
 		sudo apt-get install atom -y;;
 
-	22) # PHP 7
+	22) # PHP 7 e Apache
 		sudo apt-get install python-software-properties -y
 		sudo add-apt-repository ppa:ondrej/php -y
 		sudo apt-get update -y
@@ -184,6 +184,7 @@ case $opcao in
 		sudo apt-get install php-zip
 		sudo apt-get install php-xml
 		sudo apt-get install php-mbstring
+		sudo apt-get install apache2
 		sudo apt-get --purge autoremove -y;;
 
 	23) # Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
