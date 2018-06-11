@@ -280,9 +280,9 @@ case $opcao in
 	39) #Laravel
 		composer global require "laravel/installer"
 		sudo apt-get install php-xml
-		sudo apt-get install php-mbstring;;
+		sudo apt-get install php-mbstring
 		echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
-		source ~/.bashrc
+		source ~/.bashrc;;
 
 	00) # Saída com Reinicialização
 		echo "Saindo e reiniciando... "
