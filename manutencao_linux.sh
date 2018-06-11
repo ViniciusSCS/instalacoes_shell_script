@@ -287,7 +287,7 @@ case $opcao in
 		sudo apt-get install php-xml
 		sudo apt-get install php7.0-mbstring
 		composer global require "laravel/installer"
-		echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> ~/.bashrc
+		export PATH="$HOME/.config/composer/vendor/bin:$PATH" >> ~/.bashrc
 		source ~/.bashrc
 		alias laravel='~/.composer/vendor/bin/laravel';;
 
