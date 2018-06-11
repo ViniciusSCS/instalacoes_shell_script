@@ -267,7 +267,8 @@ case $opcao in
 		export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh";;
 
 	36) #Composer
-		curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer;;
+		curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+		sudo chown -R $USER ~/.composer/;;
 
 	37) #Angular
 		sudo npm install -g @angular/cli;;
@@ -280,6 +281,8 @@ case $opcao in
 		composer global require "laravel/installer"
 		sudo apt-get install php-xml
 		sudo apt-get install php-mbstring;;
+		echo 'export PATH="$HOME/.composer/vendor/bin:$PATH"' >> ~/.bashrc
+		source ~/.bashrc
 
 	00) # Saída com Reinicialização
 		echo "Saindo e reiniciando... "
