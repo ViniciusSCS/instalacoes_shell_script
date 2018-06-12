@@ -290,6 +290,12 @@ case $opcao in
 		export PATH="$HOME/.config/composer/vendor/bin:$PATH" >> ~/.bashrc
 		source ~/.bashrc
 		alias laravel='~/.composer/vendor/bin/laravel';;
+	
+	40) #ASDF
+		sudo apt-get install build-essential
+		git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.5.0
+		echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
+		echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc;;
 
 	00) # Saída com Reinicialização
 		echo "Saindo e reiniciando... "
