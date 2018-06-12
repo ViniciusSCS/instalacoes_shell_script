@@ -43,6 +43,7 @@ echo "==========================================================
 	37 - Angular
 	38 - Ruby e Ruby on Rails
 	39 - Laravel
+	40 - ASDF
 	00 - Saida com Reinicialização
 	0  - Saida do Script
 
