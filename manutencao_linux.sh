@@ -44,6 +44,7 @@ echo "==========================================================
 	38 - Ruby e Ruby on Rails
 	39 - Laravel
 	40 - ASDF
+	41 - Spotify
 	00 - Saida com Reinicialização
 	0  - Saida do Script
 
@@ -297,6 +298,12 @@ case $opcao in
 		git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.5.0
 		echo -e '\n. $HOME/.asdf/asdf.sh' >> ~/.bashrc
 		echo -e '\n. $HOME/.asdf/completions/asdf.bash' >> ~/.bashrc;;
+	
+	41) #Spotify
+		sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 0DF731E45CE24F27EEEB1450EFDC8610341D9410 931FF8E79F0876134EDDBDCCA87FF9DF48BF1C90
+		echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+		sudo apt-get update
+		sudo apt-get install spotify-client
 
 	00) # Saída com Reinicialização
 		echo "Saindo e reiniciando... "
