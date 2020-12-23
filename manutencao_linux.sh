@@ -180,9 +180,9 @@ case $opcao in
 		sudo apt-get install python-software-properties -y
 		sudo add-apt-repository ppa:ondrej/php -y
 		sudo apt-get update -y
-		sudo apt-get install php7.0 php7.0-fpm -y
-		sudo apt-get install libapache2-mod-php7.0 -y
-		sudo apt-get install php7.0-mysql -y
+		sudo apt-get install php php-fpm -y
+		sudo apt-get install libapache2-mod-php -y
+		sudo apt-get install php-mysql -y
 		sudo apt-get install php-zip
 		sudo apt-get install php-xml
 		sudo apt-get install php-mbstring
@@ -192,7 +192,7 @@ case $opcao in
 	23) # Postgresql e PgAdmin3 - Sistema Gerenciador de Banco de Dados
 		sudo apt-get update;
 		sudo apt-get install postgresql -y
-		sudo apt-get install pgadmin3 -y;;
+		sudo apt-get install pgadmin -y;;
 
 	24) #Git - Versionamento
 		sudo apt-get update
@@ -285,9 +285,9 @@ case $opcao in
 		gem install rails;;
 	
 	39) #Laravel
-		sudo apt-get install php7.0-zip
+		sudo apt-get install php-zip
 		sudo apt-get install php-xml
-		sudo apt-get install php7.0-mbstring
+		sudo apt-get install php-mbstring
 		composer global require "laravel/installer"
 		export PATH="$HOME/.config/composer/vendor/bin:$PATH" >> ~/.bashrc
 		source ~/.bashrc
