@@ -4,7 +4,7 @@ clear
 while true; do
 echo "==========================================================
    Digite o número do componente/programa a ser instalado:
-	1  - Atualização Update & Update & Autoclean & Autoremove
+	1  - Atualização Upgrade & Update & Autoclean & Autoremove
 	2  - VS Code
 	3  - Docker
 	4  - Git
@@ -79,7 +79,7 @@ case $opcao in
 		php -r "if (hash_file('SHA384', '/tmp/composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 		sudo php /tmp/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 		composer
-		echo "Aqui vamos baixar o NVM..."
+		echo "Aqui vamos baixar o Laravel..."
 		composer global require laravel/installer
 		export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 		laravel;;
